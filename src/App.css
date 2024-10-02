@@ -23,6 +23,75 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+h1 {
+  font-family: 'Markazi Text'
+}
+h2 {
+  font-family: 'Markazi Text'
+}
+h3 {
+  font-family: 'Markazi Text'
+}
+h4 {
+  font-family: 'Markazi Text'
+}
+h5 {
+  font-family: 'Markazi Text'
+}
+h6 {
+  font-family: 'Markazi Text'
+}
+p {
+  font-family: 'Karla'
+}
+span {
+  font-family: 'Karla'
+}
+img {
+  max-height: 100px;
+}
+
+App {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-auto-rows: minmax(150px, auto);
+  grid-template-areas:  "head"
+                        "main"
+                        "footer";
+}
+
+header {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "img nav nav";
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  li {
+    margin-right: 10px;
+    font-family: 'Karla';
+  }
+}
+
+main {
+  display: grid;
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "div div div";
+  font-family: 'Markazi Text';
+  div {
+    margin-right: 20px;
+    li {
+      list-style: none;
+      font-family: 'Karla';
+    }
+  }
+}
+
 
 .App-link {
   color: #61dafb;
