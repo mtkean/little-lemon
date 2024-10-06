@@ -65,10 +65,10 @@ header {
   justify-content: center;
   grid-template-areas: "img nav nav";
 }
-nav ul {
+nav {
   display: flex;
   list-style: none;
-  li {
+  .nav-item {
     margin-right: 10px;
     font-family: 'Karla';
   }
