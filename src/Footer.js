@@ -2,21 +2,21 @@
 function Footer() {
     return (
         <footer>
-            <div class="doormat navigation">
+            <div className="doormat navigation">
                 <label>Doormat Navigation</label>
                 <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="menu">Menu</a></li>
-                    <li><a href="reservations">Reservations</a></li>
-                    <li><a href="order">Order Online</a></li>
-                    <li><a href="login">Login</a></li>
+                    <li key="home"><a href="home">Home</a></li>
+                    <li key="about"><a href="about">About</a></li>
+                    <li key="menu"><a href="menu">Menu</a></li>
+                    <li key="reservations"><a href="reservations">Reservations</a></li>
+                    <li key="order"><a href="order">Order Online</a></li>
+                    <li key="login"><a href="login">Login</a></li>
                 </ul>
             </div>
-            <div class="contact">
+            <div className="contact">
                 <label>Contact Us</label>
             </div>
-            <div class="social">
+            <div className="social">
                 <label>Social Links</label>
             </div>
         </footer>

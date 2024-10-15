@@ -51,16 +51,16 @@ img {
   max-height: 100px;
 }
 
-App {
+.application {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
   grid-auto-rows: minmax(150px, auto);
-  grid-template-areas:  "head"
+  grid-template-areas:  "header"
                         "main"
                         "footer";
 }
 
 header {
+  grid-area: header;
   display: grid;
   justify-content: center;
   grid-template-areas: "img nav nav";
@@ -75,10 +75,13 @@ nav {
 }
 
 main {
+  grid-area: main;
   display: grid;
+  justify-content: center;
 }
 
 footer {
+  grid-area: footer;
   display: grid;
   justify-content: center;
   grid-template-areas: "div div div";

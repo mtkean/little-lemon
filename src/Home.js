@@ -33,12 +33,12 @@ const Chicago = () => {
 
 function Home() {
     return (
-        <div className="homepage">
+        <main className="homepage">
             <CallToAction />
             <Specials />
             <CusotmersSay />
             <Chicago />
-        </div>
+        </main>
     );
 }
 
