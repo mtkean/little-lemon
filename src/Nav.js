@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function Nav() {
     return (
-        <div>
+        <>
             <nav>
                 <Link to="/" className="nav-item">Home</Link>
                 <Link to="/abouts" className="nav-item">About</Link>
@@ -11,7 +11,7 @@ function Nav() {
                 <Link to="order" className="nav-item">Order</Link>
                 <Link to="login" className="nav-item">Login</Link>
             </nav>
-        </div>
+        </>
     );
 }
 

@@ -15,9 +15,14 @@ function Footer() {
             </div>
             <div className="contact">
                 <label>Contact Us</label>
+                <p>Phone: XXX-XXX-XXXX</p>
             </div>
             <div className="social">
                 <label>Social Links</label>
+                <ul>
+                    <li key="facebook"><a href="https://www.facebook.com">Facebook</a></li>
+                    <li key="x.com"><a href="https://x.com">X (Twitter)</a></li>
+                </ul>
             </div>
         </footer>
     );

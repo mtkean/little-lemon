@@ -3,7 +3,9 @@ import Nav from './Nav';
 function Header() {
     return (
         <header>
-            <img src="./Logo192.png" alt="A logo for the Little Lemon Restaurant"></img>
+            <object id='little-lemon-logo' data='./assets/Logo.svg' type='image/svg+xml'
+                alt='The logo for the Little Lemon Restaurant'
+                aria-label='The logo for the Little Lemon Restaurant'/>
             <Nav/>
         </header>
     );

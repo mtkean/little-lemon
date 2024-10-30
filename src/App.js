@@ -8,8 +8,8 @@ import Order from "./Order";
 import Menu from "./Menu";
 import Home from "./Home";
 import About from "./About";
-import Reservations from "./Reservations";
-import ConfirmedBooking from './ConfirmedBooking';
+import Reservations from "./booking/Reservations";
+import ConfirmedBooking from './booking/ConfirmedBooking';
 
 function App() {
   return (

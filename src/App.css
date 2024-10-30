@@ -53,7 +53,7 @@ img {
 
 .application {
   display: grid;
-  grid-auto-rows: minmax(150px, auto);
+  width: 100%;
   grid-template-areas:  "header"
                         "main"
                         "footer";
@@ -62,12 +62,27 @@ img {
 header {
   grid-area: header;
   display: grid;
-  justify-content: center;
-  grid-template-areas: "img nav nav";
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 60px;
+  grid-template-areas: "logo nav nav";
+  #little-lemon-logo {
+    display: grid;
+    grid-area: logo;
+    justify-self: left;
+    margin-left: 30px;
+    align-self: center;
+  }
 }
+
 nav {
+  grid-area: nav;
+  grid-column: 2 / -1;
   display: flex;
+  justify-self: right;
+  align-self: center;
   list-style: none;
+  margin-right: 30px;
   .nav-item {
     margin-right: 10px;
     font-family: 'Karla';

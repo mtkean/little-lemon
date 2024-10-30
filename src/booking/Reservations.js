@@ -1,7 +1,7 @@
 import BookingForm from "./BookingForm";
 import { useReducer } from 'react';
 import { useNavigate } from "react-router-dom";
-import { fetchAPI, submitAPI } from "./utils/BookingTimeUtil";
+import { fetchAPI, submitAPI } from "../utils/BookingTimeUtil";
 
 
 export function createInitialTimes(date) {
@@ -9,10 +9,11 @@ export function createInitialTimes(date) {
 }
 
 export function timeReducer(state, date) {
+    const effectiveDate = date? date : new Date();
     console.log('reducer used');
     return {
         ...state,
-        availableTimes: fetchAPI(date)
+        availableTimes: fetchAPI(effectiveDate)
     };
 }
 
