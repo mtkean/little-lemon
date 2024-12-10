@@ -1,7 +1,7 @@
 
 function Footer() {
     return (
-        <footer>
+        <footer id="footerId">
             <div className="doormat navigation">
                 <label>Doormat Navigation</label>
                 <ul>

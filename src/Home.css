@@ -1,0 +1,100 @@
+.homepage {
+    display: grid;
+    grid-template-areas: "call-to-action"
+                         "specials"
+                         "testimonials"
+                         "chicago";
+    p {
+        color: #ee9972;
+    }
+    .call-to-action {
+        background-color: #edefee;
+        padding: 20px;
+        border-radius: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        margin: 30px;
+        h1 {
+            grid-column: 1/-1;
+        }
+        h3 {
+            grid-column: 1/-1;
+        }
+    }
+    .specials {
+        background-color: #edefee;
+        padding: 20px;
+        border-radius: 2rem;
+        display: grid;
+        margin: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        h2 {
+            grid-column: 1/-1;
+            text-align: center;
+        }
+        img {
+            height: 200px;
+        }
+        .specialCard {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    }
+    .customers-say {
+        background-color: #edefee;
+        padding: 20px;
+        display: grid;
+        border-radius: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 30px;
+        h2 {
+            grid-column: 1/-1;
+        }
+    }
+    .testimonial {
+        background-color: #edefee;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        border-radius: 1rem;
+        display: grid;
+        width: 200px;
+        border-color: #495e57;
+        border-width: .1rem;
+        border-style: solid;
+        margin: 5px;
+        p {
+            grid-column: 2/4;
+            text-align: center;
+            align-self: center;
+        }
+        .reviewContent {
+            grid-column: 1/-1;
+            color: #495e57;
+        }
+    }
+    .chicago {
+        background-color: #edefee;
+        padding: 20px;
+        border-radius: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        margin: 30px;
+        h2 {
+            grid-column: 1/-1;
+        }
+        h3 {
+            grid-column: 1/-1;
+        }
+        p {
+            border-color: #495e57;
+            border-style: solid;
+            padding: 10px;
+            margin: 0%;
+        }
+    }
+}

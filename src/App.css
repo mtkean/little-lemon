@@ -2,69 +2,65 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: #495e57;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 h1 {
-  font-family: 'Markazi Text'
+  font-family: 'Markazi Text';
+  color: #495e57;
+  font-size: 4rem;
 }
 h2 {
-  font-family: 'Markazi Text'
+  font-family: 'Markazi Text';
+  color: #495e57;
+  font-size: 3rem;
 }
 h3 {
-  font-family: 'Markazi Text'
+  font-family: 'Markazi Text';
+  color: #495e57;
+  font-size: 2rem;
 }
 h4 {
-  font-family: 'Markazi Text'
-}
-h5 {
-  font-family: 'Markazi Text'
-}
-h6 {
-  font-family: 'Markazi Text'
+  font-family: 'Markazi Text';
+  color: #495e57;
+  font-size: 1.5rem;
 }
 p {
-  font-family: 'Karla'
+  font-family: 'Karla';
+  color: #495e57;
+  font-size: 1rem;
 }
 span {
-  font-family: 'Karla'
+  font-family: 'Karla';
+  color: #495e57;
+  font-size: 1rem;
 }
 img {
-  max-height: 100px;
+  max-height: 300px;
 }
 
 .application {
+  z-index: 10;
   display: grid;
   width: 100%;
+  height: 100%;
+  position: relative;
+  margin-bottom: 200px;
+  overflow-y: scroll;
   grid-template-areas:  "header"
-                        "main"
-                        "footer";
+                        "main";
 }
 
 header {
   grid-area: header;
   display: grid;
+  position: relative;
   width: 100%;
+  color: #495e57;
+  background-color: #edefee;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 60px;
+  height: 60px;
   grid-template-areas: "logo nav nav";
   #little-lemon-logo {
     display: grid;
@@ -79,6 +75,7 @@ nav {
   grid-area: nav;
   grid-column: 2 / -1;
   display: flex;
+  position: relative;
   justify-self: right;
   align-self: center;
   list-style: none;
@@ -93,33 +90,44 @@ main {
   grid-area: main;
   display: grid;
   justify-content: center;
+  position: relative;
+  background-color: #495e57;
+  height: 100%;
 }
 
 footer {
-  grid-area: footer;
+  z-index: 3;
+  background-color: #edefee;
+  border-top: #333333;
+  border-style: solid none none none;
+  color: #495e57;
+  position: fixed;
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  bottom: 0;
   display: grid;
   justify-content: center;
   grid-template-areas: "div div div";
   font-family: 'Markazi Text';
   div {
-    margin-right: 20px;
+    margin-right: 60px;
+    margin-top: 20px;
+    ul {
+      margin-top: 20px;
+      padding-left: 0%;
+    }
     li {
       list-style: none;
       font-family: 'Karla';
+      a:visited, a:link{
+        text-decoration: none;
+        color: #495e57;
+      }
+      a:hover {
+        background-color: #333333;
+        color: #f4ce14;
+      }
     }
-  }
-}
-
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }

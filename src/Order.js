@@ -1,10 +1,9 @@
 
 function Order() {
     return (
-        <div>
+        <main>
             <h1>This is the order page</h1>
-        </div>
+        </main>
     );
-}
-
+};
 export default Order;

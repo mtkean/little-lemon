@@ -1,0 +1,36 @@
+.bookingForm {
+    display: grid;
+    margin: 50px;
+    border-radius: 1rem;
+    width: 500px;
+    text-align: center;
+    background-color: #edefee;
+    align-items: center;
+    .FieldError {
+        color: red;
+        font-size: .7rem;
+    }
+
+    input:invalid {
+        color: red;
+        border-color: red;
+    }
+
+    label {
+        color: #495e57;
+    }
+
+    input {
+        width: 200px;
+        margin: auto;
+    }
+
+    #submit-reservation {
+        margin-bottom: 20px;
+    }
+
+    select {
+        width: 200px;
+        margin: auto;
+    }
+}
