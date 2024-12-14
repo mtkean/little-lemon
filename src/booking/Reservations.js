@@ -28,7 +28,7 @@ function Reservations() {
             navigate("/confirmed-booking")
         }
         else {
-            //TODO
+            // TODO: all submissions will automaticallly succeed
         }
     }
     const [state, dispatch] = useReducer(timeReducer, { availableTimes: createInitialTimes(new Date()) });

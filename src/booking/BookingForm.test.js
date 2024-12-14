@@ -6,3 +6,9 @@ test('Renders the BookingForm heading', () => {
     const headingElement = screen.getByText("Book Now");
     expect(headingElement).toBeInTheDocument();
 });
+
+test('Renders the submit button', () => {
+    render(<BookingForm availableTimes={[]}/>);
+    const submitButton = screen.getByText("Make your reservation");
+    expect(submitButton).toBeInTheDocument();
+});
